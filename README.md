@@ -10,7 +10,6 @@ Images resized using MS paint.
 Charts rendered using Chart JS v.2.6.0 http://www.chartjs.org/
 https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js
 
-bus logo from https://pixabay.com/en/bus-coach-logo-transport-travel-157679/ user OpenClipart-Vectors
 
 Aaron B Ferris assisted in correcting errors in old code. Provided instructions on how to fix images by creating separate HTMl pages.
 

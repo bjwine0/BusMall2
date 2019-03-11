@@ -84,6 +84,24 @@ div img{
 #results li{
   color: #526474;
 }
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin: 0px auto 30px auto;
+    }
+    
+    li{
+        border-bottom-color: 1px solid #440840
+    }
+    
+    li:last-child{
+        border: none
+    }
+    
+    li {
+        text-decoration: none
+    }
 #allP{
   margin-bottom: 2vw;
 }
