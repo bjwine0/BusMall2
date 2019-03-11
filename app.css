@@ -1,9 +1,17 @@
 
-body{
-  background: #999999;
-  color: #526474;
-  margin: 3vw 10vw 3vw 10vw ;
-  width: o auto
+html, body {
+    height: 80%;
+    widows: 900px;
+    background: #f1baed;
+}
+
+
+body {
+    font-family:'Lato', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.7vw;
+    display: center;
 }
 
 /* top of page */
