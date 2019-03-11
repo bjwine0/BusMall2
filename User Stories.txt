@@ -1,0 +1,22 @@
+
+User Storeis:
+As a Developer I want:
+
+Create clean code and styling.
+Create framework for storing results and show results in a chart or graph.
+Create interactive images for the user that creates a result when mouse is pressed on product image.
+
+
+As a product surveyor I would want:
+
+Easily participate in the product voting.
+Easily view products choices.
+Easily view data and other consumer choices on products.
+Easily to view chart of final results.
+
+As Busmall Marketing Sales Representative I would want:
+
+Easy to view data and fact finding results to use for presentations to corporate.
+Easy to find consumer votes in a chart.
+Easy to view customer feedback.
+Easy to view effectiveness of our advertizing to present to advertizers and use for future sales.

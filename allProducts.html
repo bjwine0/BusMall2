@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>: Randomtown Transportation Advertisement: AD Interest </title>
+    <title>: BusMall Market Survey: AD Interest </title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
  </head>
   <body>
     <header>
@@ -12,7 +12,7 @@
           <ul>
             <a href="index.html"><li>Product Interest Home</li></a>
             <a href="allproducts.html"><li>All Products</li> </a>
-            <a href="*"><li>Product Intrest Metrics</li></a>
+            <a href="survey.index.html"><li>Product Intrest Metrics</li></a>
             <a href="feedback.html"><li>Contact us</li></a>
           </ul>
       </nav>
@@ -102,7 +102,22 @@
            <h3>Porthole Wineglass</h3>
             <img class="product"  src="img/wine-glass.jpg" alt="" title="" />
          </div>
-                  
+        </section>
+        <div>
+          <table id="tableResults"></table>
+           <canvas id="results-chart"></canvas>
+           <ul id=totalClicks></ul>
+          </div>
+           <section>  
+         <input id = "clear"type= "submit" name ="button" value =" CLEAR DATA "> 
+         </section>
+       </main>
+         </content>
+          <footer>
+            <p>Copyright 2019 BusMall Inc.</p>
+           </footer>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+             <script src="app.js" href="app.js"></script>    
       </content>
   </body>
 </html>
