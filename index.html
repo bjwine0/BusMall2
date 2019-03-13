@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>: BusMall Market Survey: AD Interest </title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/app.css">
+    <title> BusMall: Product Survey  </title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
  </head>
   <body>
     <header>
-      <img src ="logo" src="img/" alt="sub-banner1" title="Bus Mall Market Survey">
+      <img id="logo" src="img/nonproducts/buslogo.png" alt="sub-banner1" title="sub-banner1">
       <nav >
           <ul>
-            <a href="index.html"><li>Products Home</li></a>
+            <a href="index.html"><li>Product Interest Home</li></a>
             <a href="allproducts.html"><li>All Products</li> </a>
-            <a href="survey.index.html"><li>Product Sales</li></a>
-            <a href="feedback.html"><li>Contact</li></a>
+            <a href="survey.index.html"><li>Product Survey</li></a>
+            <a href="contact.html"><li>Contact us</li></a>
           </ul>
       </nav>
-      <h1> put stuff here</h1>
+      <h1> Product Survey</h1>
     </header>
+    <content>
+        <h2 id=instruction>Click which you would most likely purchase</h2>
 
-      <content>
-        <p>more stuff here </p>
-  
-        <a href=survey.html><button type="button">BEGIN SURVEY</button></a>
+        <div id= "holder">
+            <img class= "product" id="productA" src="" alt="" title="" />
+            <img class="product" id="productB" src="" alt="" title="" />
+            <img class="product" id="productC" src="" alt="" title="" />
+        </div>
+        <canvas id="prodTable"></canvas>
+
+        <ul id="results"></ul>
       </content>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+      <script src="app.js"></script>
+    
   </body>
-  <footer></footer>
 </html>
