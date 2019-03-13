@@ -5,15 +5,19 @@ if (localStorage.allChosenLoc){
   console.log('previous storage')
   var retrievedNames=localStorage.productNamesLoc;
   var retrievedVotes=localStorage.allChosenLoc;
+  // console.log('retrievedName', retrievedNames, 'retrievedVotes', retrievedVotes);
+
   var productNames=JSON.parse(retrievedNames);
   var allChosen=JSON.parse(retrievedVotes);
-  localStorage.clear
+  // localStorage.clear;// no need
+  displaychart();
 }
 else{ 
   console.log('new page')
   var productNames=['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
-  var ext = ['jpg', 'jpg','jpg', 'jpg', 'jpg', 'jpg','jpg', 'jpg', 'jpg', 'jpg','jpg', 'jpg', 'jpg', 'jpg','png', 'jpg', 'jpg', 'gif','jpg', 'jpg'];
+  var ext = ['jpg','jpg','jpg', 'jpg', 'jpg', 'jpg','jpg', 'jpg', 'jpg', 'jpg','jpg', 'jpg', 'jpg', 'jpg','png', 'jpg', 'jpg', 'gif','jpg', 'jpg'];
   var allChosen=[];
+
   for (i=0;i<productNames.length;i++){
     allChosen.push(0);
     
@@ -49,7 +53,7 @@ for(var i=0; i<productNames.length; i++){
   new Product(`${productNames[i]}`,allChosen[i],`${ext[i]}`);
 }
 
-//constructor function - 
+//constructor function //
 
 
 //make the random products - this i get
@@ -161,7 +165,7 @@ function handleClick(event){
     productC.src = '';
     productC.alt = '';
     productC.title = '';
-    console.table(allProducts); 
+    // console.table(allProducts); 
     displaychart();
     }
 }
