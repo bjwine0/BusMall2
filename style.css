@@ -12,6 +12,13 @@
 
 img {
   border-radius: 50%;
+  border: 8px solid black;
+}
+img:hover {
+  
+  -webkit-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
 }
 
 canvas{
@@ -20,3 +27,9 @@ canvas{
   height:600px !important;
   margin: 0 auto;
 }
+
+html {
+  background-color: rgb(153, 206, 187);
+}
+
+
