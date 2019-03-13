@@ -13,3 +13,5 @@ https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js
 
 Aaron B Ferris assisted in correcting errors in old code. Provided instructions on how to fix images by creating separate HTMl pages.
 
+Brad Smialek assisted in image display fixing file path bugs img ext. and resizing.  Gif is working and chart is resized for user.
+

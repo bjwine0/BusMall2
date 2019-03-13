@@ -1,6 +1,6 @@
 'use strict'
 //local storage DS Storage
-
+// debugger;
 if (localStorage.allChosenLoc){
   console.log('previous storage')
   var retrievedNames=localStorage.productNamesLoc;
@@ -12,9 +12,11 @@ if (localStorage.allChosenLoc){
 else{ 
   console.log('new page')
   var productNames=['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
+  var ext = ['jpg', 'jpg','jpg', 'jpg', 'jpg', 'jpg','jpg', 'jpg', 'jpg', 'jpg','jpg', 'jpg', 'jpg', 'jpg','png', 'jpg', 'jpg', 'gif','jpg', 'jpg'];
   var allChosen=[];
   for (i=0;i<productNames.length;i++){
     allChosen.push(0);
+    
   }
 }
 //data
@@ -37,14 +39,14 @@ prodTable.hidden = true;
 
 
 //Dom Node - I still get tripped up on this
-function Product(name, a){
-  this.filepath = `img/${name}.jpg`;
+function Product(name, a, ext){
+  this.filepath = `img/${name}.${ext}`;
   this.name = name;
   this.chosen = a;
   allProducts.push(this); 
 }
 for(var i=0; i<productNames.length; i++){
-  new Product(`${productNames[i]}`,allChosen[i]);
+  new Product(`${productNames[i]}`,allChosen[i],`${ext[i]}`);
 }
 
 //constructor function - 
@@ -101,15 +103,15 @@ function displaychart(){
         scales: {
           yAxes:[{
             ticks: {
-              fontsize: 10,
-              setpsize: 1,
-              beginAtZero:true
+              // fontsize: 10,
+              // setpsize: 1,
+              // beginAtZero:true
             }
 
           }],
           xAxes: [{
              ticks:{
-               fontsize: 10,
+              //  fontsize: 10,
                autoSkip: false
              }
 

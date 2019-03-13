@@ -9,3 +9,7 @@
 .product{
   margin: 0 auto;
 }
+
+img {
+  border-radius: 50%;
+}
