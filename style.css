@@ -13,3 +13,10 @@
 img {
   border-radius: 50%;
 }
+
+canvas{
+
+  width:1000px !important;
+  height:600px !important;
+  margin: 0 auto;
+}
